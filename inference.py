@@ -125,7 +125,7 @@ def main():
         "hr_upscaler": "Latent",
         "hr_scale": 2,
         "hr_second_pass_steps": 10,
-        "denoising_strength": 0.5,
+        "denoising_strength": 3.5,
         # "styles": ['style 1', 'style 2'],
         "override_settings": {
             'sd_model_checkpoint': "cyber",  # this can use to switch sd model
