@@ -25,6 +25,20 @@ def main():
         default="a painting of a virus monster playing guitar",
         help="the prompt to render"
     )
+
+    parser.add_argument(
+        "--h",
+        type=int,
+        default=512,
+        help="the height to render"
+    )
+
+    parser.add_argument(
+        "--w",
+        type=int,
+        default=512,
+        help="the width to render"
+    )
     opt = parser.parse_args()
 
     payload = {
@@ -32,8 +46,8 @@ def main():
         "negative_prompt": "child, childlike, (monochrome:1.3), (oversaturated:1.3), bad hands, lowers, 3d render, cartoon, long body, ((blurry)), duplicate, ((duplicate body parts)), [wrong|anatomy], (disfigured), (poorly drawn), (extra limbs), fused fingers, extra fingers, (twisted), malformed hands, ((((mutated hands and fingers)))), contorted, conjoined, ((missing limbs)), logo, signature, text, words, low res, boring, mutated, artifacts, bad art, gross, ugly, poor quality, low quality, kid, missing asshole, extra ass, ugly teeth, blurry teeth,",
         "seed": 1234,
         "steps": 35,
-        "width": 768,
-        "height": 768,
+        "width": opt.w,
+        "height": opt.h,
         "cfg_scale": 3.5,
         "sampler_name": "DPM++ 2M Karras",
         "n_iter": 1,
