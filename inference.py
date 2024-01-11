@@ -16,6 +16,8 @@ os.makedirs(out_dir_i2i, exist_ok=True)
 
 
 def main():
+    print('Starting image gen')
+
     parser = argparse.ArgumentParser()
 
     parser.add_argument(
@@ -39,6 +41,13 @@ def main():
         default=512,
         help="the width to render"
     )
+
+    parser.add_argument(
+        "--batch",
+        type=int,
+        default=2,
+        help="how many images to generate"
+    )
     opt = parser.parse_args()
 
     payload = {
@@ -51,7 +60,7 @@ def main():
         "cfg_scale": 3.5,
         "sampler_name": "DPM++ 2M Karras",
         "n_iter": 1,
-        "batch_size": 4,
+        "batch_size": opt.batch,
 
         # example args for x/y/z plot
         # "script_name": "x/y/z plot",
