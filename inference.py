@@ -30,14 +30,14 @@ def main():
     payload = {
         "prompt": opt.prompt,
         "negative_prompt": "child, childlike, (monochrome:1.3), (oversaturated:1.3), bad hands, lowers, 3d render, cartoon, long body, ((blurry)), duplicate, ((duplicate body parts)), [wrong|anatomy], (disfigured), (poorly drawn), (extra limbs), fused fingers, extra fingers, (twisted), malformed hands, ((((mutated hands and fingers)))), contorted, conjoined, ((missing limbs)), logo, signature, text, words, low res, boring, mutated, artifacts, bad art, gross, ugly, poor quality, low quality, kid, missing asshole, extra ass, ugly teeth, blurry teeth,",
-        "seed": 1,
+        "seed": 1234,
         "steps": 35,
         "width": 768,
         "height": 768,
         "cfg_scale": 3.5,
         "sampler_name": "DPM++ 2M Karras",
         "n_iter": 1,
-        "batch_size": 1,
+        "batch_size": 4,
 
         # example args for x/y/z plot
         # "script_name": "x/y/z plot",
@@ -103,7 +103,7 @@ def main():
         # "denoising_strength": 0.5,
         # "styles": ['style 1', 'style 2'],
         "override_settings": {
-            'sd_model_checkpoint': "analog",  # this can use to switch sd model
+            'sd_model_checkpoint': "cyber",  # this can use to switch sd model
         },
     }
     call_txt2img_api(**payload)
