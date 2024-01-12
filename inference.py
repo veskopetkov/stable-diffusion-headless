@@ -128,7 +128,7 @@ def main():
         "denoising_strength": 4.5,
         # "styles": ['style 1', 'style 2'],
         "override_settings": {
-            'sd_model_checkpoint': "cyber",  # this can use to switch sd model
+            'sd_model_checkpoint': "analog",  # this can use to switch sd model
         },
     }
     call_txt2img_api(**payload)
