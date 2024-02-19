@@ -52,7 +52,7 @@ def main():
 
     payload = {
         "prompt": opt.prompt,
-        "negative_prompt": "child, childlike, (monochrome:1.3), (oversaturated:1.3), bad hands, lowers, 3d render, cartoon, long body, ((blurry)), duplicate, ((duplicate body parts)), [wrong|anatomy], (disfigured), (poorly drawn), (extra limbs), fused fingers, extra fingers, (twisted), malformed hands, ((((mutated hands and fingers)))), contorted, conjoined, ((missing limbs)), logo, signature, text, words, low res, boring, mutated, artifacts, bad art, gross, ugly, poor quality, low quality, kid, missing asshole, extra ass, ugly teeth, blurry teeth,",
+        "negative_prompt": "(hands: 1.7), (fingers: 1.4), (feet: 1.3), child, childlike, (monochrome:1.3), (oversaturated:1.3), 3d render, cartoon, ((blurry)), logo, signature, text, words, artifacts, kid, ugly teeth, blurry teeth",
         "seed": 1234,
         "steps": 35,
         "width": opt.w,
