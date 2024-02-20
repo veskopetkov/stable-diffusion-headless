@@ -45,7 +45,7 @@ def main():
     parser.add_argument(
         "--batch",
         type=int,
-        default=2,
+        default=10,
         help="how many images to generate"
     )
     opt = parser.parse_args()
