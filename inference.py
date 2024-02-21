@@ -124,7 +124,7 @@ def main():
         "hr_sampler_name": "DPM++ 2M Karras",
         "hr_upscaler": "Latent",
         "hr_scale": 2,
-        "hr_second_pass_steps": 33,
+        "hr_second_pass_steps": 39,
         "denoising_strength": 4.0,
         # "styles": ['style 1', 'style 2'],
         "override_settings": {
