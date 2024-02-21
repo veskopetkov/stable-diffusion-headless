@@ -57,7 +57,7 @@ def main():
         "steps": 35,
         "width": opt.w,
         "height": opt.h,
-        "cfg_scale": 3.5,
+        "cfg_scale": 3.8,
         "sampler_name": "DPM++ 2M Karras",
         "n_iter": 1,
         "batch_size": opt.batch,
@@ -124,7 +124,7 @@ def main():
         "hr_sampler_name": "DPM++ 2M Karras",
         "hr_upscaler": "Latent",
         "hr_scale": 2,
-        "hr_second_pass_steps": 39,
+        "hr_second_pass_steps": 41,
         "denoising_strength": 4.0,
         # "styles": ['style 1', 'style 2'],
         "override_settings": {
