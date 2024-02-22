@@ -124,8 +124,8 @@ def main():
         "hr_sampler_name": "DPM++ 2M Karras",
         "hr_upscaler": "Latent",
         "hr_scale": 2,
-        "hr_second_pass_steps": 41,
-        "denoising_strength": 4.0,
+        "hr_second_pass_steps": 30,
+        "denoising_strength": 3.0,
         # "styles": ['style 1', 'style 2'],
         "override_settings": {
             'sd_model_checkpoint': "analog",  # this can use to switch sd model
